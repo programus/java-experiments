@@ -1,0 +1,10 @@
+
+
+String string = "abcd"; 
+// Can the code below be compiled without error? why? 
+if (string instanceof Integer) {
+	System.out.println("This is a Integer instance"); 
+}
+else {
+	System.out.println("This is not a Integer instance"); 
+}

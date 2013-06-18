@@ -1,0 +1,18 @@
+
+
+// You can find the difference between >> and >>> if you run the code section below. 
+byte i = -5; 
+System.out.println(Integer.toBinaryString(i)); 
+System.out.println(Integer.toBinaryString(i >> 1)); 
+System.out.println(Integer.toBinaryString(i >>> 1)); 
+
+
+
+// What's the different? 
+byte i = 3; 
+i = i + 5; 
+System.out.println(i); 
+
+byte i = 3; 
+i += 5; 
+System.out.println(i); 

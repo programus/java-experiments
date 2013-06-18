@@ -1,0 +1,15 @@
+Class name: StringTool
+
+Method getTrueLength
+Parameters:
+String - Original String
+Return value: 
+the byte length in current charset. 
+any exception, return -1
+
+Method unicodeTrim
+Parameters:
+String - Original String
+Return value: 
+String without leading and tailing white space. 
+the same string as the parameter if no leading or tailing white spaces. 
