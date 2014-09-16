@@ -13,6 +13,7 @@ public class AsyncInvoke {
 	public static void main(String[] args) {
 		System.out.println("method invoke here"); 
 		new Thread("Async call demo") {
+			@Override
 			public void run() {
 				delay(2000); 
 			}
