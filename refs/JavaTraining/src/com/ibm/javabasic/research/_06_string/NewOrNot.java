@@ -24,6 +24,8 @@ public class NewOrNot {
 		
 		System.out.println(wra.get()); 
 		System.out.println(wrb.get()); 		
+		System.out.println(a);
+		System.out.println(b);
 	}
 
 }
