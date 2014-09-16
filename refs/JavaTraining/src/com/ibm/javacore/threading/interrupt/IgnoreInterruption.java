@@ -22,6 +22,8 @@ public class IgnoreInterruption implements Runnable {
 		Thread t = new Thread(new IgnoreInterruption(), "NO INTERRUPT"); 
 		t.start(); 
 		Thread.sleep(302); 
-		t.interrupt(); 
+		while (t.isAlive()) {
+			t.interrupt(); 
+		}
 	}
 }

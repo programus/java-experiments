@@ -18,7 +18,9 @@ public class InterruptedSleep implements Runnable {
 		Thread t = new Thread(new InterruptedSleep()); 
 		t.start(); 
 		Thread.sleep(200); 
-		t.interrupt(); 
+		while (t.isAlive()) {
+			t.interrupt(); 
+		}
 	}
 
 }

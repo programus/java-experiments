@@ -16,7 +16,9 @@ public class InterruptHandle implements Runnable {
 		Thread t = new Thread(new InterruptHandle()); 
 		t.start(); 
 		Thread.sleep(100); 
-		t.interrupt(); 
+		while (t.isAlive()) {
+			t.interrupt(); 
+		}
 	}
 
 }
